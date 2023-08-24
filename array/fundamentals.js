@@ -149,3 +149,187 @@
 // const num = [2, 5, 7, 3, 5, 9];
 // const sorted = num.sort();
 // console.log(sorted);
+
+
+// vishal rajput's
+
+// create an empty array
+
+// const arr = []
+// const arr = [1, 2, 3, 5,"jyoti",{name:"pal"},[{name:"jiya"}]]
+// console.log(arr, arr2)
+// access an array elemtn
+
+// console.log(arr2[5])
+// console.log(arr2[4])
+
+//array length
+
+// console.log(arr2.length)
+
+// last element of an array
+
+// console.log(arr2.length - 1);
+// to access any element in an array is 0(n)
+
+// to remove last element
+// pop not only delete the last element it also returns the last element
+// arr.pop()
+// aad in  an array to the last
+
+// arr.push(5)
+
+// add in the first place
+// arr.unshift(2)
+
+// delete starting element in an array
+// arr.shift()
+
+//1 find element
+
+
+
+// const findElement = (arr,target) => {
+//     for (let i = 0; i < arr.length; i++){
+//         if (arr[i] === target)
+//             return arr[i];
+//     }
+//     return false;
+// }
+
+// console.log(findElement([1, 2, 3, 4, 5], 8));
+// let arr =[1,2,3,4,5,6,7,8]
+// console.log(arr.includes(7))
+// console.log(arr);
+    //array.some checks weather at least one element 
+    //in the array satisfy the  given the call abck fuctiosn condition
+// array.every method tests wwather all element in the array passes the callback test 
+
+// array.includes checks if the array if the element is present in thr array or not
+
+
+// indexOf
+// console.log(arr.indexOf(3))
+
+// splice 
+// in spalice im saying arr.splice(start index, number of element)
+// here im saying 1st index se 2 element remove karo
+// arr.splice(1, 2)
+
+// here 2nd index se 3 element hato so output will come as [ 1, 2, 6, 7, 8 ]
+// arr.splice(2,3)
+
+// arr.splice(2, 0, 11, 12, 13)
+// here what im doing is from 2nd index dont delete anything instead add 11,12,13  so output will come as [ 1, 2, 11, 12, 13, 3, 4,  5,  6,  7, 8]
+
+// let arr =[1,2,3,4,5,6,7,8]
+
+// arr.splice(2, 3, 0, 0, 0, 0)
+// here what im doing is fron 2nd index delete 3 elemtns and in that place add 0,0,0,0 so output will come as  [1, 2, 0, 0, 0,0, 6, 7, 8]
+
+// let arr =[1,2,3,4,5,6,7,8]
+
+
+
+// what is the difference between splice and slice
+// slice does not modify the original array
+// it returns a new array with the removed value
+// let newArr = arr.slice(1, 3)
+
+// splice
+// original array is modifed
+// let newArr = arr.splice(1,3)
+// console.log(newArr) // [ 2, 3, 4 ]
+// console.log(arr); // [ 1, 5, 6, 7, 8 ]
+
+// shallow copy
+// in  shallow copy  original arr changes if i change the arr2 becouse its pass by refernce and both the arr rference to the same in array in the memory
+// const arr2 = arr;
+// arr2.splice(1,2)
+// console.log(arr,"this is arr ")
+// console.log(arr2, "this is arr2")
+
+// deep copy
+//1 method spread operator
+// let arr2 = [...arr]
+
+//2  method Array.from(arr)
+//array.from method creates a new array from array or objects
+// let arr2 = Array.from(arr)
+// arr2.splice(1,3)
+// console.log(arr, "this is arr ");
+// console.log(arr2, "this is arr2");
+
+// 4 method arr.concat()
+//when i concat when dont give any parameter it returns a deep copy of an array
+// let arr2  = arr.concat()
+// arr2.splice(1, 3);
+// console.log(arr, "this is arr ");
+// console.log(arr2, "this is arr2");
+
+//how to add two arrays
+
+//1 spread operator
+
+// let arr =[1,2,3]
+// let arr2 = [4, 5, 6]
+
+// let newArr = [...arr, ...arr2]
+// console.log(newArr)
+
+//2 concat method
+// let newArr = arr.concat(arr2)
+// console.log(newArr);
+
+// q check if two arrays are equals
+
+// const isEqual = (arr,arr2) => {
+//     if (arr.length !== arr2.length) {
+//         return false
+//     }
+
+//     for (let i = 0; i < arr.length; i++){
+//         if (arr[i] !== arr2[i]) {
+//             return false
+//         }
+//     }
+//     return true
+
+// }
+
+// another way to do this
+
+// const isEqual = (arr, arr2) => {
+//     return arr.length === arr2.length && arr.every((item) =>arr[item] === arr2[item])
+// }
+// console.log(isEqual([1,2,3,4],[1,2,3,4]))
+
+// sort the arr 
+
+// const arr = [1, 2, 3, 5];
+// arr.sort((a,b) => b-a);
+// console.log(arr)
+
+// rverse an arrya 
+
+// const arr = [1, 2, 3, 4];
+// arr.reverse()
+// console.log(arr)
+
+// rverse an array 
+
+// const reverseArr = (arr) => {
+//     arr.sort()
+//     let start = 0;
+//     let end = arr.length - 1;
+//     while (end > start) { 
+//         let temp = arr[start];
+//         arr[start] = arr[end];
+//         arr[end] = temp;
+//         start++;
+//         end--
+//     }
+//     return arr;
+// }
+// console.log(reverseArr([1,21,32,4]))
+
