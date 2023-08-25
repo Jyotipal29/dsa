@@ -151,7 +151,7 @@
 // console.log(sorted);
 
 
-// vishal rajput's
+// ****//
 
 // create an empty array
 
@@ -332,4 +332,157 @@
 //     return arr;
 // }
 // console.log(reverseArr([1,21,32,4]))
+
+
+// summ of array elemenst 
+
+// const sum = (arr) => {
+//     return arr.reduce((acc,curVal) => (acc + curVal))
+// }
+
+// const sum = (arr) => {
+//     let sum = 0;
+//     for (let i = 0; i < arr.length; i++){
+//         sum += arr[i]
+//     }
+//     return sum;
+// }
+
+
+// console.log(sum([1,2,3,4,5]))
+
+
+// find max and min of an array 
+
+// const minMax = (arr) => {
+//     let min = arr[0];
+//     let max = arr[0];
+//     for (let i = 0; i < arr.length; i++){
+//         if (arr[i] < min) {
+//             min = arr[i]
+//         }
+
+//         if (arr[i] > max) {
+//             max = arr[i];
+//         }
+     
+//     }
+
+//     return {
+//         min, max
+//     }
+// }
+
+// console.log(minMax([1,2,3,4]))
+
+// reverse an array 
+
+// const reverse = (arr) => {
+
+//     let a = 0;
+//     let b = arr.length - 1;
+//     let temp = 0;
+
+//     while (b > a) {
+//         temp = arr[a];
+//         arr[a] = arr[b];
+//         arr[b] = temp;
+//         a++;
+//         b--;
+//     }
+
+//     return arr;
+    
+// }
+
+
+// constinas duplicates
+// const dups = (arr) => {
+//     arr.sort();
+//     for (let i = 0; i < arr.length; i++){
+//         if (arr[i] === arr[i + 1]) {
+//             return true;
+//         }
+//     }
+//     return false
+// }
+
+
+// remove the dups
+// take an empty array now check if an elemtn exixt there if exist then move to next if does not then add that element 
+
+// const removeDups = (arr) => {
+//     let newArr = [];
+//     for (let i = 0; i < arr.length; i++){
+//         if (!newArr.includes(arr[i])) {
+//             newArr.push(arr[i])
+//         }
+//     }
+//     return newArr;
+// }
+
+
+// console.log(removeDups([1, 2, 2, 3, 3, 4, 5, 6, 6]));
+
+// rotate array 
+
+
+// const inter = (arr1, arr2) => {
+//     let res = [];
+
+//     for (let ele of arr1) {
+//         if (arr2.includes(ele)) {
+//             res.push(ele)
+//         }
+//     }
+
+//     return res;
+// }
+
+// console.log(inter([1,2,3,11,12],[3,4,5,12]))
+
+
+// const add = (arr1, arr2) => {
+//     let sum = [];
+//     for (let i = 0; i < arr1.length; i++){
+//         sum[i] = arr1[i] + arr2[i];
+//     }
+//     return sum;
+// }
+
+// console.log(add([1,2,3,4],[1,2,3,4]))
+
+//array reversal [1,2,3,4,5] => [5,4,3,2,1] dont use new array 
+
+// const rev = (arr) => {
+//     let a = 0;
+//     let b = arr.length - 1;
+//     let temp = 0;
+//     while (b > a) {
+//         temp = arr[a];
+//         arr[a] = arr[b];
+//         arr[b] = temp;
+//         a++;
+//         b--;
+//     }
+//     return arr;
+// }
+
+// console.log(rev([1,2,3,4]))
+
+//2 Array Filtering
+// Input: ["apple", "banana", "grape", "kiwi"] (Minimum length: 5)
+// Output: ["banana", "grape"]
+
+// const fill = (arr) => {
+//     return arr.filter((item) => item.length > 3)
+// }
+
+// console.log(fill(["jyoti","palxx"]))
+
+// array sorting 
+
+// const sort = (arr) => {
+    
+// }
 
