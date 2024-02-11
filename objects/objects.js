@@ -47,11 +47,11 @@
 
 // freeze method
 // in freeze method u cant add delete update keys values
-const person = {
-  name: "jyoti",
-  age: 22,
-  isDev: true,
-};
+// const person = {
+//   name: "jyoti",
+//   age: 22,
+//   isDev: true,
+// };
 // Object.freeze(person);
 // person.name = "jyoti pal";
 
@@ -85,9 +85,130 @@ const person = {
 //   console.log(key);
 // }
 
+
+
+
+
+
+
+
+
 // Object.keys(person).forEach((key) => console.log(key));
 // const person2 = {
 //   name: "preeti",
 //   age: "20",
 // };
-console.log(Object.is(person, person2));
+// console.log(Object.is(person, person2));
+
+
+
+
+// const person = {
+//   name: "jyoti",
+//   age: 21,
+//   isDev: true,
+//   skills: ["js", "reactjs"],
+//   projects: {
+//     projectOne: "jyocart",
+//   },
+//   code: function () {
+//     return "start coding";
+//   },
+//   walk: () => {
+//     return "start walking";
+//   },
+// };
+
+// Object.keys(person).forEach((key) => console.log(key))
+
+
+
+
+
+// person.hobbies = ["singing songs"]
+// person.age =22
+
+// delete person.code
+
+// console.log(person)
+
+// object.freeze
+
+// Object.freeze(person)
+// person.name = "preeti"
+
+// delete person.walk
+
+
+// console.log(Object.isFrozen(person))
+// object.seal
+
+// Object.seal(person)
+
+// person.likes = ["hey"]
+
+// delete person.walk
+// person.name ="pal"
+// console.log(person)
+
+// let arr  =[]
+// for (let key in person) {
+//    arr.push(person[key])
+// }
+
+// console.log(arr)
+
+
+
+
+
+// shallow copy
+//chieved using {...spread}
+
+const person = {
+  name: "jyoti",
+  age: 21,
+  prof: {
+    isDev:true
+  }
+}
+
+// const person2 = { ...person }
+
+// person2.name = "preeti"
+
+// person2.prof.isDev = false
+
+// console.log(person)
+// console.log(person2)
+
+// deep copy is acchived using json.parse and json.stringfy
+
+// const person2 = JSON.parse(JSON.stringify(person))
+
+// person2.name = "hey"
+// person2.prof.isDev =false
+// console.log(person)
+// console.log(person2)
+
+
+
+// const person2 = { ...person }
+// person2.name = "pal";
+// person2.age = 23
+// console.log(person)
+// console.log(person2)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
