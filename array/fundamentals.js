@@ -486,3 +486,21 @@
     
 // }
 
+
+// let arr = [1, 2, 3, [4, 5,], [12, 3, 4]]
+
+// const flatArray = (arr) => {
+//     for (let i = 0; i < arr.length; i++) {
+//         if (Array.isArray(arr[i])) {
+//             arr.splice(i, 1, ...arr[i])
+
+//         }
+
+
+
+//     }
+//     return arr;
+
+// }
+
+// console.log(flatArray(arr))
